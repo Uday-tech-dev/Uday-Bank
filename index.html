@@ -83,6 +83,8 @@
                 document.querySelector(".payment-box").style.display = "block";
             } else {
                 alert("Invalid username or password. Please try again.");
+                document.getElementById("username").value = "";
+                document.getElementById("password").value = "";
             }
         }
 
