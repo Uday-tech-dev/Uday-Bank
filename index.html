@@ -76,12 +76,13 @@
         function login() {
             let username = document.getElementById("username").value;
             let password = document.getElementById("password").value;
-            if (username && password) {
+            
+            if (username === "Uday family" && password === "Udayfamilybank123!") {
                 alert("Login successful!");
                 document.querySelector(".login-box").style.display = "none";
                 document.querySelector(".payment-box").style.display = "block";
             } else {
-                alert("Please enter valid credentials.");
+                alert("Invalid username or password. Please try again.");
             }
         }
 
